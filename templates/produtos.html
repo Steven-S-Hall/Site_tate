@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Acervo Eva{% endblock %}
+
+{% block body %}
+
+
+<header>
+      <div class="container">
+          <img src="{{ url_for('static', filename='imgs/logo.png') }}"  alt="logo"  width="30" height="50" class="logo">
+    
+          <nav>
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link">Página principal</a></li>
+              <li class="nav__item"><a href="#services" class="nav__link">Meus Serviços</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">Sobre mim</a></li>
+              <li class="nav__item"><a href="#work" class="nav__link">Meu trabalho</a></li>
+              <li class="nav__item"><a href="produtos.html" class="nav__link">Produtos disponíveis</a></li>
+          </ul>
+      </nav>
+  </div>
+  </header>
+
+
+ <!-- My Work -->
+ <section class="my-works" id="work">
+    <h2  class="section__title section__title--work">Produtos disponíveis</h2>
+    <h5 class="section__subtitle section__subtitle--work"> Todos os produtos abaixo estão disponíveis para compra</h5>
+    
+<section class="portfolio" id="portfolio">
+    <div class="portfolio-items">
+
+      <!-- Portfolio item 1 -->
+      <figure class="portfolio-item">
+        <img class="portfolio-image" src="{{ url_for('static', filename='imgs/img6.jpg') }}" alt="portfolio item">
+        <figcaption>
+          <h2 class="portfolio-title">Carranca A</h2>
+          <p class="portfolio-desc">Breve descrição</p>
+          <a href="#" class="portfolio-link">Mais informações</a>
+        </figcaption>
+        
+        <!-- Portfolio modal 1 -->
+        <div class="portfolio-modal">
+          <button class="modal-close">
+            <svg x="0px" y="0px"
+              viewBox="0 0 30 17" height="17" width="30">
+              <g transform="translate(-15 -15)">
+              <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+              35.8,16.5 37,17.7 	"/>
+              </g>
+          </svg>
+         </button>
+          <div class="portfolio-header header-one">
+            <div class="portfolio-title-box">
+              <h2 class="portfolio-title">Carranca A</h2>    
+              <p class="portfolio-subtitle">Inserir subtitulo</p>
+            </div>
+          </div> <!-- / portfolio-header -->
+          <div class="portfolio-content">
+             <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+             <img class="{{ url_for('static', filename='imgs/img6.jpg') }}" alt="an image"> 
+             <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+             <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+             <img class="{{ url_for('static', filename='imgs/img6.jpg') }}" alt="an image"> 
+            
+            </div>
+        </div>
+        <!-- /modal -->
+      </figure>
+
+      
+        <!-- Portfolio item 2 -->
+        <figure class="portfolio-item">
+          <img class="{{ url_for('static', filename='imgs/img4.jpg') }}" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Carranca A</h2>
+            <p class="portfolio-desc">Breve descrição</p>
+            <a href="#" class="portfolio-link">Mais informações</a>
+          </figcaption>
+          
+          <!-- Portfolio modal 2-->
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+           </button>
+            <div class="portfolio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Carranca A</h2>    
+                <p class="portfolio-subtitle">Inserir subtitulo</p>
+              </div>
+            </div> <!-- / portfolio-header -->
+            <div class="portfolio-content">
+              
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="{{ url_for('static', filename='imgs/img4.jpg') }}" alt="an image"> 
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+              
+              </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+
+<!-- Portfolio item 3-->
+        <figure class="portfolio-item">
+          <img class="portfolio-image" src="{{ url_for('static', filename='imgs/img7.jpg') }}" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Carranca A</h2>
+            <p class="portfolio-desc">Breve descrição</p>
+            <a href="#" class="portfolio-link">Mais informações</a>
+          </figcaption>
+          
+          <!-- Portfolio modal 3-->
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+           </button>
+            <div class="portfolio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Carranca A</h2>    
+                <p class="portfolio-subtitle">Inserir subtitulo</p>
+              </div>
+            </div> <!-- / portfolio-header -->
+            <div class="portfolio-content">
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-full-width"src="{{ url_for('static', filename='imgs/img7.jpg') }}" alt="an image"> 
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-pull-left" src="{{ url_for('static', filename='imgs/img7.jpg') }}" alt="an image"> 
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-pull-right"src="{{ url_for('static', filename='imgs/img7.jpg') }}" alt="an image"> 
+              </div>
+          </div>
+          <!-- /modal -->
+        </figure>
+        <!-- Portfolio item 4 -->
+        <figure class="portfolio-item">
+          <img class="portfolio-image" src="{{ url_for('static', filename='imgs/img5.jpg') }}" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Carranca A</h2>
+            <p class="portfolio-desc">Breve descrição</p>
+            <a href="#" class="portfolio-link">Mais informações</a>
+          </figcaption>
+          
+          <!-- Portfolio modal 4-->
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 17" height="17" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+           </button>
+            <div class="portfolio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Carranca A</h2>    
+                <p class="portfolio-subtitle">Inserir subtitulo</p>
+              </div>
+            </div> <!-- / portfolio-header -->
+            <div class="portfolio-content">
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-full-width"src="{{ url_for('static', filename='imgs/img5.jpg') }}" alt="an image"> 
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-pull-left" src="{{ url_for('static', filename='imgs/img5.jpg') }}" alt="an image"> 
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-pull-right"src="{{ url_for('static', filename='imgs/img5.jpg') }}" alt="an image"> 
+              </div>
+          </div>
+          <!-- /modal -->
+        </figure>      
+           <!-- Portfolio item 5 -->
+           <figure class="portfolio-item">
+            <img class="portfolio-image" src="{{ url_for('static', filename='imgs/img16.jpg') }}" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title">Carranca A</h2>
+              <p class="portfolio-desc">Breve descrição</p>
+              <a href="#" class="portfolio-link">Mais informações</a>
+            </figcaption>
+            
+            <!-- Portfolio modal 5-->
+            <div class="portfolio-modal">
+              <button class="modal-close">
+                <svg x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                  35.8,16.5 37,17.7 	"/>
+                  </g>
+              </svg>
+             </button>
+              <div class="portfolio-header header-one">
+                <div class="portfolio-title-box">
+                  <h2 class="portfolio-title">Carranca A</h2>    
+                  <p class="portfolio-subtitle">Inserir subtitulo</p>
+                </div>
+              </div> <!-- / portfolio-header -->
+              <div class="portfolio-content">
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-full-width"src="{{ url_for('static', filename='imgs/img16.jpg') }}" alt="an image"> 
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-pull-left" src="{{ url_for('static', filename='imgs/img16.jpg') }}" alt="an image"> 
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-pull-right"src="{{ url_for('static', filename='imgs/img16.jpg') }}" alt="an image"> 
+                </div>
+            </div>
+            <!-- /modal -->
+          </figure>     
+
+           <!-- Portfolio item 6 -->
+           <figure class="portfolio-item">
+            <img class="portfolio-image" src="{{ url_for('static', filename='imgs/img3.jpg') }}" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title">Carranca A</h2>
+              <p class="portfolio-desc">Breve descrição</p>
+              <a href="#" class="portfolio-link">Mais informações</a>
+            </figcaption>
+            
+            <!-- Portfolio modal 6-->
+            <div class="portfolio-modal">
+              <button class="modal-close">
+                <svg x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                  35.8,16.5 37,17.7 	"/>
+                  </g>
+              </svg>
+             </button>
+              <div class="portfolio-header header-one">
+                <div class="portfolio-title-box">
+                  <h2 class="portfolio-title">Carranca A</h2>    
+                  <p class="portfolio-subtitle">Inserir subtitulo</p>
+                </div>
+              </div> <!-- / portfolio-header -->
+              <div class="portfolio-content">
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-full-width"src="{{ url_for('static', filename='imgs/img3.jpg') }}" alt="an image"> 
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-pull-left" src="{{ url_for('static', filename='imgs/img3.jpg') }}" alt="an image"> 
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-pull-right"src="{{ url_for('static', filename='imgs/img3.jpg') }}" alt="an image"> 
+                </div>
+            </div>
+            <!-- /modal -->
+          </figure>  
+  </section>
+
+ 
+</div>
+<script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/modal.js') }}"></script>
+{% endblock %}
